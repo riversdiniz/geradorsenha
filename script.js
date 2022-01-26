@@ -1,5 +1,5 @@
 let sliderElement = document.querySelector("#slider");
-let sliderElement = document.querySelector("#button");
+let buttonElement = document.querySelector("#button");
 
 let sizePassword = document.querySelector("#valor");
 let password = document.querySelector("#password");
@@ -9,13 +9,13 @@ let containerPassword = document.querySelector("#container-password");
 let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%¨&*()";
 let novaSenha = "";
 
-sizePassword.innerHTML = sliderElement.valueMax;
+sizePassword.innerHTML = sliderElement.value;
 
 slider.oninput = function(){
     sizePassword.innerHTML = this.value;
 }
 
-function gereratePassword(){
+function generatePassword(){
 
     let pass = "";
 
